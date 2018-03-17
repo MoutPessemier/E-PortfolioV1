@@ -1,0 +1,44 @@
+/*---Burger nav---*/
+@keyframes slideAway {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+}
+
+@keyframes barRotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(39deg);
+  }
+}
+
+@keyframes barRotateR {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-39deg);
+  }
+}
+/*---li bounce---*/
+@keyframes bounce {
+  25% {
+    transform: translateY(3px);
+  }
+  50% {
+    transform: translateY(-3px);
+  }
+  75% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(-3px);
+  }
+}
