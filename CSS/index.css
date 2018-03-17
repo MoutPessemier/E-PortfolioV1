@@ -170,6 +170,11 @@ hr {
   }
 }
 
+.date {
+  text-decoration: underline;
+  font-weight: bolder;
+}
+
 /*---Header---*/
 header #homepf {
   margin: 0.5em auto 0;
