@@ -1,117 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Domine:400,700");
 /*---Burger nav---*/
-@-webkit-keyframes slideAway {
-  from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
-    opacity: 0;
-  }
-}
 @keyframes slideAway {
   from {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
   to {
-    -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    transform: translateX(200px);
     opacity: 0;
-  }
-}
-
-@-webkit-keyframes barRotate {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(39deg);
-            transform: rotate(39deg);
   }
 }
 
 @keyframes barRotate {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(39deg);
-            transform: rotate(39deg);
-  }
-}
-
-@-webkit-keyframes barRotateR {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(-39deg);
-            transform: rotate(-39deg);
+    transform: rotate(39deg);
   }
 }
 
 @keyframes barRotateR {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(-39deg);
-            transform: rotate(-39deg);
+    transform: rotate(-39deg);
   }
 }
 
 /*---li bounce---*/
-@-webkit-keyframes bounce {
-  25% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
-  }
-  50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-  75% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
-  }
-  100% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
-  }
-}
 @keyframes bounce {
   25% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    transform: translateY(3px);
   }
   50% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   75% {
-    -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    transform: translateY(3px);
   }
   100% {
-    -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 }
 
 /*---General---*/
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -152,8 +89,6 @@ hr {
 
 @media screen and (min-width: 960px) {
   .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .flex-container nav {
@@ -202,8 +137,7 @@ header #homepf {
 }
 
 .dropdown ul li:hover {
-  -webkit-animation: bounce 1000ms ease;
-          animation: bounce 1000ms ease;
+  animation: bounce 1000ms ease;
 }
 
 .dropdown ul li a {
@@ -277,18 +211,15 @@ input:checked ~ div.menu-content {
 }
 
 div.burger ~ input:checked .navbalk1 {
-  -webkit-animation: barRotate 0.5s forwards;
-          animation: barRotate 0.5s forwards;
+  animation: barRotate 0.5s forwards;
 }
 
 div.burger ~ input:checked .navbalk2 {
-  -webkit-animation: slideAway 0.5s forwards;
-          animation: slideAway 0.5s forwards;
+  animation: slideAway 0.5s forwards;
 }
 
 div.burger ~ input:checked navbalk3 {
-  -webkit-animation: barRotateR 0.5s forwards;
-          animation: barRotateR 0.5s forwards;
+  animation: barRotateR 0.5s forwards;
 }
 
 @media screen and (min-width: 750px) {
@@ -304,12 +235,8 @@ div.burger ~ input:checked navbalk3 {
   nav.dropdown ul {
     border: 4px solid black;
     border-radius: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   nav.dropdown li {
     padding: 0.5em;
@@ -361,9 +288,7 @@ body {
   width: 75px;
   height: 76px;
   background-image: url("../IMAGES/sprites.png");
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 #twtr {
@@ -371,9 +296,7 @@ body {
   height: 75px;
   background-image: url("../IMAGES/sprites.png");
   background-position: -75px 1px;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -382,9 +305,7 @@ body {
   height: 76px;
   background-image: url("../IMAGES/sprites.png");
   background-position: -150px 0px;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -393,9 +314,7 @@ body {
   height: 76px;
   background-image: url("../IMAGES/sprites.png");
   background-position: -75px -150px;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -404,19 +323,13 @@ body {
   height: 76px;
   background-image: url("../IMAGES/sprites.png");
   background-position: -76px -302px;
-  -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
 div.socialcontainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   clear: both;
 }
 
@@ -435,9 +348,7 @@ div.socialcontainer a.social:visited {
 
 @media screen and (min-width: 750px) {
   div.socialcontainer {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    justify-content: flex-end;
   }
 }
 
@@ -629,7 +540,7 @@ a.links {
 }
 
 /*---Hobby's---*/
-a.hobby {
+.hobby {
   color: #23be4a;
 }
 
