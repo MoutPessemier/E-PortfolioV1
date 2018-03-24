@@ -53,38 +53,42 @@
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+* h1,
+* h2,
+* h3,
+* h4,
+* h5,
+* h6 {
   font-family: "Montserrat", sans-serif !important;
 }
 
-.to_top {
+* .to_top {
   color: #23be4a;
   text-decoration: none;
 }
 
-.to_top:hover {
+* .to_top:hover {
   color: #23be4a;
   text-decoration: none;
 }
 
-.to_top:visited {
+* .to_top:visited {
   color: #1fa842;
   text-decoration: none;
 }
 
-hr {
+* hr {
   clear: both;
 }
 
-.emphasis {
+* .emphasis {
   color: #23be4a;
   font-weight: bold;
   text-decoration: underline;
+}
+
+* p {
+  margin: 0 .7em;
 }
 
 @media screen and (min-width: 960px) {
@@ -389,6 +393,38 @@ div.socialcontainer a.social:visited {
   color: #177d31;
 }
 
+/*code block center (rewrite later to make it better!)*/
+@media screen and (max-width: 749px) {
+  .if_else {
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .if_else {
+    margin-left: 12%;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .if_else {
+    margin-left: 5%;
+    margin-right: 2%;
+  }
+}
+
+@media screen and (min-width: 751px) {
+  .if_else {
+    margin-left: 25%;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .if_else {
+    margin-left: 25%;
+  }
+}
+
 @media screen and (min-width: 880px) {
   .slider {
     display: block;
@@ -539,7 +575,7 @@ a.links {
   text-decoration: underline;
 }
 
-/*---Hobby's---*/
+/*---Hobby---*/
 .hobby {
   color: #23be4a;
 }
