@@ -10,7 +10,8 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  h1,
+
+h1,
 h2,
 h3,
 h4,
@@ -44,6 +45,10 @@ hr {
 
 p{
   margin: 0 .7em;
+}
+#current{
+  font-weight: bold;
+  color: $green,
 }
 }
 
@@ -410,51 +415,19 @@ sup {
   margin-left: -4px;
 }
 
-.timeline {
-  display: none;
+.dropdownArrow{
+  transform: rotate(180deg) scale(0.8);
+  cursor: pointer;
+  margin-left: 8px;
 }
 
-@media screen and (min-width: 670px) {
-  .timeline {
-    display: block;
-    float: left;
-    margin-left: 1em;
-    margin-bottom: 1em;
-  }
-  section.info-container {
-    position: relative;
-    .article1 {
-      position: absolute;
-      top: -30px;
-      left: 25px;
-    }
-    .article2 {
-      position: absolute;
-      top: 117px;
-      left: 25px;
-    }
-    .article3 {
-      position: absolute;
-      top: 272px;
-      left: 25px;
-    }
-    .article4 {
-      position: absolute;
-      top: 430px;
-      left: 25px;
-    }
-    .article5 {
-      position: absolute;
-      top: 580px;
-      left: 25px;
-    }
-    .article6 {
-      position: absolute;
-      top: 733px;
-      left: 25px;
-    }
+@media screen and (min-width:960px){
+  .selfInfo{
+    max-width: 45%;
   }
 }
+
+
 /*---Italent---*/
 h3.title {
   font-weight: bold;
