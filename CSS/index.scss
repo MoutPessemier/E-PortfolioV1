@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-@import url('https://fonts.googleapis.com/css?family=Domine:400,700');
-@import 'fonts';
-@import 'colors';
-@import 'mixins';
-@import 'animations';
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import url("https://fonts.googleapis.com/css?family=Domine:400,700");
+@import "fonts";
+@import "colors";
+@import "mixins";
+@import "animations";
 
 /*---General---*/
 * {
@@ -11,48 +11,46 @@
   margin: 0;
   padding: 0;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $fontFamilyTitles !important;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $fontFamilyTitles !important;
+  }
 
-.to_top {
-  color: $green;
-  text-decoration: none;
-  &:hover {
+  .to_top {
     color: $green;
     text-decoration: none;
+    &:hover {
+      color: $green;
+      text-decoration: none;
+    }
+    &:visited {
+      color: darken($green, 5);
+      text-decoration: none;
+    }
   }
-  &:visited {
-    color: darken($green, 5);
-    text-decoration: none;
+
+  hr {
+    clear: both;
+  }
+
+  .emphasis {
+    color: $green;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  p {
+    margin: 0 0.7em;
+  }
+  #current {
+    font-weight: bold;
+    color: $green;
   }
 }
-
-hr {
-  clear: both;
-}
-
-.emphasis {
-  color: $green;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-p{
-  margin: 0 .7em;
-}
-#current{
-  font-weight: bold;
-  color: $green,
-}
-}
-
-
 
 @media screen and (min-width: 960px) {
   .flex-container {
@@ -125,7 +123,7 @@ header {
   }
 }
 
-input[type='checkbox'] {
+input[type="checkbox"] {
   display: none;
 }
 
@@ -258,14 +256,14 @@ body {
 #fb {
   width: 75px;
   height: 76px;
-  background-image: url('../IMAGES/sprites.png');
+  background-image: url("../IMAGES/sprites.png");
   transform: scale(0.5);
 }
 
 #twtr {
   width: 75px;
   height: 75px;
-  background-image: url('../IMAGES/sprites.png');
+  background-image: url("../IMAGES/sprites.png");
   background-position: -75px 1px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -274,7 +272,7 @@ body {
 #insta {
   width: 75px;
   height: 76px;
-  background-image: url('../IMAGES/sprites.png');
+  background-image: url("../IMAGES/sprites.png");
   background-position: -150px 0px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -283,7 +281,7 @@ body {
 #yt {
   width: 75px;
   height: 76px;
-  background-image: url('../IMAGES/sprites.png');
+  background-image: url("../IMAGES/sprites.png");
   background-position: -75px -150px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -292,7 +290,7 @@ body {
 #sc {
   width: 75px;
   height: 76px;
-  background-image: url('../IMAGES/sprites.png');
+  background-image: url("../IMAGES/sprites.png");
   background-position: -76px -302px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -356,34 +354,33 @@ div.socialcontainer {
 
 /*code block center (rewrite later to make it better!)*/
 
-@media screen and (max-width:749px ){
-  .if_else{
+@media screen and (max-width: 749px) {
+  .if_else {
     margin-left: 15%;
   }
 }
 
-
-@media screen and (max-width:570px ){
-  .if_else{
+@media screen and (max-width: 570px) {
+  .if_else {
     margin-left: 12%;
   }
 }
 
-@media screen and (max-width:525px ){
-  .if_else{
+@media screen and (max-width: 525px) {
+  .if_else {
     margin-left: 5%;
-    margin-right:2%;
+    margin-right: 2%;
   }
 }
 
-@media screen and (min-width:751px ){
-  .if_else{
+@media screen and (min-width: 751px) {
+  .if_else {
     margin-left: 25%;
   }
 }
 
-@media screen and (min-width:960px ){
-  .if_else{
+@media screen and (min-width: 960px) {
+  .if_else {
     margin-left: 25%;
   }
 }
@@ -415,23 +412,28 @@ sup {
   margin-left: -4px;
 }
 
-.dropdownArrow{
+.dropdownArrow {
   transform: rotate(180deg) scale(0.8);
   cursor: pointer;
   margin-left: 8px;
 }
 
-@media screen and (min-width:960px){
-  .selfInfo{
+@media screen and (min-width: 960px) {
+  .selfInfo {
     max-width: 45%;
   }
 }
-
 
 /*---Italent---*/
 h3.title {
   font-weight: bold;
 }
+#chargeBy {
+  display: block;
+ width: 30em;
+  float: right;
+}
+
 /*---CV---*/
 
 th {
@@ -624,7 +626,7 @@ fieldset > label {
   text-align: left;
 }
 
-input[type='radio'] {
+input[type="radio"] {
   display: inline-block;
   text-align: right;
 }
@@ -633,14 +635,14 @@ select {
   width: 150px;
 }
 
-input[type='text'] {
+input[type="text"] {
   width: 150px;
   display: block;
   margin-bottom: -10px;
 }
 
 @media screen and (min-width: 750px) {
-  input[type='text'] {
+  input[type="text"] {
     width: 170px;
   }
   select {
