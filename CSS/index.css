@@ -475,10 +475,11 @@ h3.title {
   font-weight: bold;
 }
 
-#chargeBy {
+.chargeBy {
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  width: 30em;
-  float: right;
 }
 
 /*---CV---*/
