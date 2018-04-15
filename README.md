@@ -8,3 +8,4 @@ This site is for public use, you can copy anything but if you see something new 
 PRACTICAL:
 Everything is hand made (with the use of the Bootstrap 4 framework).
 You can find my original concepts in the designs.
+If the site needs better coverage and accessibility for people with a disablity, please do let me know!
