@@ -50,6 +50,9 @@
     font-weight: bold;
     color: $green;
   }
+  .outdated {
+    text-decoration: line-through;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -419,26 +422,14 @@ sup {
 }
 
 @media screen and (min-width: 960px) {
-  .selfInfo {
-    max-width: 45%;
-  }
-  .article1 {
-    @include gridDisp(2, 2);
-  }
-  .article2 {
-    @include gridDisp(3, 1);
-  }
-  .article3 {
-    @include gridDisp(1, 5);
-  }
-  .article4 {
-    @include gridDisp(2, 3);
-  }
-  .article5 {
-    @include gridDisp(1, 1);
-  }
+  .article1,
+  .article2,
+  .article3,
+  .article4,
+  .article5,
   .article6 {
-    @include gridDisp(1, 1);
+    width: 50%;
+    display: inline-block;
   }
 }
 
