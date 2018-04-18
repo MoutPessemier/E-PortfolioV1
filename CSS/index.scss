@@ -53,6 +53,26 @@
   .outdated {
     text-decoration: line-through;
   }
+  .color1 {
+    background-color: $green;
+    width: 20px;
+    margin: 0 5px;
+    text-align: center;
+    padding-top: 3px;
+    height: 30px;
+    border: 2px solid $black;
+    cursor: pointer;
+  }
+  .color2 {
+    background-color: $yellow;
+    width: 20px;
+    margin: 0 5px;
+    text-align: center;
+    padding-top: 3px;
+    height: 30px;
+    border: 2px solid $black;
+    cursor: pointer;
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -326,10 +346,10 @@ div.socialcontainer {
   margin: 1em 0.5em;
 }
 .keyword {
-  color: #2663d4;
+  color: $blue;
 }
 .string {
-  color: #f58300;
+  color: $yellow;
 }
 
 .if_else {
@@ -567,7 +587,7 @@ li {
     clear: both;
     padding: 0.5em 0;
     figure {
-      position: relative;
+      width: 100%;
       img {
         width: 45%;
         float: left;
@@ -575,7 +595,6 @@ li {
       }
       div.caption {
         float: left;
-        width: 46%;
         clear: both;
         text-align: left;
         max-width: 288px;
@@ -599,14 +618,20 @@ li {
   article.gitaar,
   article.IT {
     figure {
+      width: 100%;
       img {
-        width: 30%;
+        width: 40%;
+        float: left;
       }
       div.caption {
         top: 290px;
+        width: 100%;
+        float: left;
+        clear: both;
       }
       p {
         padding-right: 1em;
+        float: right;
       }
     }
   }
