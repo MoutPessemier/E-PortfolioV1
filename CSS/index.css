@@ -230,7 +230,7 @@ header #homepf {
   background: #262626;
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
@@ -559,6 +559,54 @@ sup {
   .selfInfo {
     max-width: 45%;
   }
+  .article1 {
+    margin-right: 2;
+    margin-bottom: 2;
+    width: 49%;
+  }
+  .article1:nth-child(2n) {
+    margin-right: 0;
+  }
+  .article2 {
+    margin-right: 1;
+    margin-bottom: 1;
+    width: 32.66667%;
+  }
+  .article2:nth-child(3n) {
+    margin-right: 0;
+  }
+  .article3 {
+    margin-right: 5;
+    margin-bottom: 5;
+    width: 100%;
+  }
+  .article3:nth-child(1n) {
+    margin-right: 0;
+  }
+  .article4 {
+    margin-right: 3;
+    margin-bottom: 3;
+    width: 48.5%;
+  }
+  .article4:nth-child(2n) {
+    margin-right: 0;
+  }
+  .article5 {
+    margin-right: 1;
+    margin-bottom: 1;
+    width: 100%;
+  }
+  .article5:nth-child(1n) {
+    margin-right: 0;
+  }
+  .article6 {
+    margin-right: 1;
+    margin-bottom: 1;
+    width: 100%;
+  }
+  .article6:nth-child(1n) {
+    margin-right: 0;
+  }
 }
 
 /*---Italent---*/
@@ -808,32 +856,47 @@ section.links a.extra_links {
 .btn {
   background-color: #23be4a;
   color: whitesmoke;
-  margin-top: 0.5em;
   border-radius: 7px;
+  margin-top: 1em;
 }
 
-fieldset > label {
+form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+fieldset .gender label {
   display: inline-block;
+  width: 160px;
   text-align: left;
 }
 
-input[type="radio"] {
-  display: inline-block;
-  text-align: right;
+fieldset .details label {
+  text-align: left;
 }
 
 select {
   width: 150px;
 }
 
-input[type="text"] {
+input[type='text'] {
   width: 150px;
   display: block;
-  margin-bottom: -10px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 750px) {
-  input[type="text"] {
+  .cont {
+    background: url(../IMAGES/kaderForm.png) no-repeat;
+    margin: 0 auto;
+    width: 50%;
+  }
+  legend {
+    padding-top: 0.5em;
+    width: 350px;
+  }
+  input[type='text'] {
     width: 170px;
   }
   select {

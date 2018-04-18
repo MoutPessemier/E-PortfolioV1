@@ -1,9 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
-@import url("https://fonts.googleapis.com/css?family=Domine:400,700");
-@import "fonts";
-@import "colors";
-@import "mixins";
-@import "animations";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Domine:400,700');
+@import 'fonts';
+@import 'colors';
+@import 'mixins';
+@import 'animations';
 
 /*---General---*/
 * {
@@ -123,7 +123,7 @@ header {
   }
 }
 
-input[type="checkbox"] {
+input[type='checkbox'] {
   display: none;
 }
 
@@ -256,14 +256,14 @@ body {
 #fb {
   width: 75px;
   height: 76px;
-  background-image: url("../IMAGES/sprites.png");
+  background-image: url('../IMAGES/sprites.png');
   transform: scale(0.5);
 }
 
 #twtr {
   width: 75px;
   height: 75px;
-  background-image: url("../IMAGES/sprites.png");
+  background-image: url('../IMAGES/sprites.png');
   background-position: -75px 1px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -272,7 +272,7 @@ body {
 #insta {
   width: 75px;
   height: 76px;
-  background-image: url("../IMAGES/sprites.png");
+  background-image: url('../IMAGES/sprites.png');
   background-position: -150px 0px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -281,7 +281,7 @@ body {
 #yt {
   width: 75px;
   height: 76px;
-  background-image: url("../IMAGES/sprites.png");
+  background-image: url('../IMAGES/sprites.png');
   background-position: -75px -150px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -290,7 +290,7 @@ body {
 #sc {
   width: 75px;
   height: 76px;
-  background-image: url("../IMAGES/sprites.png");
+  background-image: url('../IMAGES/sprites.png');
   background-position: -76px -302px;
   transform: scale(0.5);
   margin-left: -2.3em;
@@ -422,6 +422,24 @@ sup {
   .selfInfo {
     max-width: 45%;
   }
+  .article1 {
+    @include gridDisp(2, 2);
+  }
+  .article2 {
+    @include gridDisp(3, 1);
+  }
+  .article3 {
+    @include gridDisp(1, 5);
+  }
+  .article4 {
+    @include gridDisp(2, 3);
+  }
+  .article5 {
+    @include gridDisp(1, 1);
+  }
+  .article6 {
+    @include gridDisp(1, 1);
+  }
 }
 
 /*---Italent---*/
@@ -434,7 +452,6 @@ h3.title {
   margin-left: auto;
   margin-right: auto;
   display: block;
-
 }
 
 /*---CV---*/
@@ -620,32 +637,52 @@ section.links {
 .btn {
   background-color: $green;
   color: $white;
-  margin-top: 0.5em;
   border-radius: 7px;
+  margin-top: 1em;
 }
 
-fieldset > label {
-  display: inline-block;
-  text-align: left;
+form {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
 }
 
-input[type="radio"] {
-  display: inline-block;
-  text-align: right;
+fieldset {
+  .gender {
+    label {
+      display: inline-block;
+      width: 160px;
+      text-align: left;
+    }
+  }
+  .details {
+    label {
+      text-align: left;
+    }
+  }
 }
 
 select {
   width: 150px;
 }
 
-input[type="text"] {
+input[type='text'] {
   width: 150px;
   display: block;
-  margin-bottom: -10px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 750px) {
-  input[type="text"] {
+  .cont {
+    background: url(../IMAGES/kaderForm.png) no-repeat;
+    margin: 0 auto;
+    width: 50%;
+  }
+  legend {
+    padding-top: 0.5em;
+    width: 350px;
+  }
+  input[type='text'] {
     width: 170px;
   }
   select {
