@@ -581,15 +581,15 @@ sup {
   margin-left: 8px;
 }
 
+#resort,
+#restore {
+  visibility: hidden;
+}
+
 @media screen and (min-width: 960px) {
-  .article1,
-  .article2,
-  .article3,
-  .article4,
-  .article5,
-  .article6 {
-    width: 50%;
-    display: inline-block;
+  #resort,
+  #restore {
+    visibility: visible;
   }
 }
 

@@ -1,17 +1,25 @@
 const colors = document.getElementsByClassName('colorPicker');
 const colorBtnGreen = document.getElementsByClassName('color1');
 const colorBtnYellow = document.getElementsByClassName('color2');
+let HTMLElements = document.getElementsByTagName('*');
+
+function changeColor(index) {
+  let color = colors[index].style.backgroundColor;
+  for (let i = 0; i < HTMLElements.length; i++) {
+    if (HTMLElements[i].style.color) {
+      HTMLElements[i].style.color = color;
+    }
+  }
+}
 
 function init() {
-  let color;
-  if (colorBtnGreen.onclick) {
-    color = colors[0].style.backgroundColor;
-  }
-  if (colorBtnYellow.onclick) {
-    color = colors[1].style.backgroundColor;
-  }
+  colorBtnGreen.onclick = function() {
+    changeColor(0);
+  };
 
-  //loop over mijn css file en stel elke keer de kleur in op color
+  colorBtnYellow.onclick = function() {
+    changeColor(1);
+  };
 }
 
 window.onload = init;
