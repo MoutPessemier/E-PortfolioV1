@@ -534,6 +534,13 @@ h3.course {
 a.links {
   @include emphasis($green);
 }
+
+.interCulList {
+  margin-left: 3em;
+  li {
+    list-style-type: disc;
+  }
+}
 /*---Hobby---*/
 
 .hobby {
@@ -562,6 +569,7 @@ article.IT {
   }
   p {
     margin: 0 0.5em;
+    margin-left: 5em;
   }
   figure {
     img {
@@ -569,6 +577,8 @@ article.IT {
     }
     .caption {
       margin-bottom: 0.5em;
+      margin-right: 3em;
+      clear: both;
     }
   }
 }
@@ -689,11 +699,6 @@ input[type='text'] {
 }
 
 @media screen and (min-width: 750px) {
-  .cont {
-    background: url(../IMAGES/kaderForm.png) no-repeat;
-    margin: 0 auto;
-    width: 50%;
-  }
   legend {
     padding-top: 0.5em;
     width: 350px;
@@ -703,5 +708,15 @@ input[type='text'] {
   }
   select {
     width: 170px;
+  }
+}
+@media screen and (min-width: 960px) {
+  .cont {
+    background: url(../IMAGES/kaderForm.png) no-repeat;
+    margin: 0 auto;
+    width: 50%;
+  }
+  fieldset > legend {
+    display: none;
   }
 }

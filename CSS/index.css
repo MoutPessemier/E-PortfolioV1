@@ -676,6 +676,14 @@ a.links {
   text-decoration: underline;
 }
 
+.interCulList {
+  margin-left: 3em;
+}
+
+.interCulList li {
+  list-style-type: disc;
+}
+
 /*---Hobby---*/
 .hobby {
   color: #23be4a;
@@ -717,6 +725,7 @@ article.fitness p,
 article.gitaar p,
 article.IT p {
   margin: 0 0.5em;
+  margin-left: 5em;
 }
 
 article.floorball figure img,
@@ -735,6 +744,8 @@ article.fitness figure .caption,
 article.gitaar figure .caption,
 article.IT figure .caption {
   margin-bottom: 0.5em;
+  margin-right: 3em;
+  clear: both;
 }
 
 li {
@@ -883,11 +894,6 @@ input[type='text'] {
 }
 
 @media screen and (min-width: 750px) {
-  .cont {
-    background: url(../IMAGES/kaderForm.png) no-repeat;
-    margin: 0 auto;
-    width: 50%;
-  }
   legend {
     padding-top: 0.5em;
     width: 350px;
@@ -897,6 +903,17 @@ input[type='text'] {
   }
   select {
     width: 170px;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .cont {
+    background: url(../IMAGES/kaderForm.png) no-repeat;
+    margin: 0 auto;
+    width: 50%;
+  }
+  fieldset > legend {
+    display: none;
   }
 }
 /*# sourceMappingURL=index.css.map */
