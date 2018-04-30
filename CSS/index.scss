@@ -77,6 +77,28 @@
     list-style: circle;
     margin-left: 0.75em;
   }
+  .languageSwitcher {
+    border: 2px solid black;
+    margin: 0 0.1em;
+    height: 27px;
+    width: 35px;
+    text-align: center;
+  }
+
+  .NL {
+    background: url('../IMAGES/BelgischeVlag.png') no-repeat;
+    color: $grey;
+    &:hover {
+      color: $grey;
+    }
+  }
+  .EN {
+    background: url('../IMAGES/EngelseVlag.png') no-repeat;
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
 }
 
 @media screen and (min-width: 960px) {
@@ -237,11 +259,12 @@ div.burger ~ input:checked {
     display: inline;
   }
   nav.dropdown li a {
+    font-size: 13px;
     display: inline;
     background-color: $white;
     color: $black;
     border-bottom: 0;
-    padding: 0;
+    padding: 0em;
     &:hover {
       background-color: $white;
     }
@@ -265,9 +288,6 @@ footer {
 
 body {
   background-color: $white;
-}
-
-@media screen and (min-width: 750px) {
 }
 
 @media screen and (min-width: 960px) {

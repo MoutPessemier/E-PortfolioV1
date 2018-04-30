@@ -190,6 +190,32 @@
   margin-left: 0.75em;
 }
 
+* .languageSwitcher {
+  border: 2px solid black;
+  margin: 0 0.1em;
+  height: 27px;
+  width: 35px;
+  text-align: center;
+}
+
+* .NL {
+  background: url("../IMAGES/BelgischeVlag.png") no-repeat;
+  color: dimgrey;
+}
+
+* .NL:hover {
+  color: dimgrey;
+}
+
+* .EN {
+  background: url("../IMAGES/EngelseVlag.png") no-repeat;
+  color: black;
+}
+
+* .EN:hover {
+  color: black;
+}
+
 @media screen and (min-width: 960px) {
   .flex-container {
     display: -webkit-box;
@@ -357,11 +383,12 @@ div.burger ~ input:checked navbalk3 {
     display: inline;
   }
   nav.dropdown li a {
+    font-size: 13px;
     display: inline;
     background-color: whitesmoke;
     color: black;
     border-bottom: 0;
-    padding: 0;
+    padding: 0em;
   }
   nav.dropdown li a:hover {
     background-color: whitesmoke;
