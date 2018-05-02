@@ -10,95 +10,94 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: $fontFamilyTitles !important;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $fontFamilyTitles !important;
+}
 
-  .to_top {
+.to_top {
+  color: $green;
+  text-decoration: none;
+  &:hover {
     color: $green;
     text-decoration: none;
-    &:hover {
-      color: $green;
-      text-decoration: none;
-    }
-    &:visited {
-      color: darken($green, 5);
-      text-decoration: none;
-    }
   }
+  &:visited {
+    color: darken($green, 5);
+    text-decoration: none;
+  }
+}
 
-  hr {
-    clear: both;
-  }
+hr {
+  clear: both;
+}
 
-  .emphasis {
-    color: $green;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+.emphasis {
+  color: $green;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-  p {
-    margin: 0 0.7em;
-  }
-  #current {
-    font-weight: bold;
-    color: $green;
-  }
-  .outdated {
-    text-decoration: line-through;
-  }
-  .color1 {
-    background-color: $green;
-    width: 20px;
-    margin: 0 5px;
-    text-align: center;
-    padding-top: 3px;
-    height: 30px;
-    border: 2px solid $black;
-    cursor: pointer;
-  }
-  .color2 {
-    background-color: $yellow;
-    width: 20px;
-    margin: 0 5px;
-    text-align: center;
-    padding-top: 3px;
-    height: 30px;
-    border: 2px solid $black;
-    cursor: pointer;
-  }
-  ul {
-    list-style: circle;
-    margin-left: 0.75em;
-  }
-  .languageSwitcher {
-    border: 2px solid black;
-    margin: 0 0.1em;
-    height: 27px;
-    width: 35px;
-    text-align: center;
-  }
+p {
+  margin: 0 0.7em;
+}
+#current {
+  font-weight: bold;
+  color: $green;
+}
+.outdated {
+  text-decoration: line-through;
+}
+.color1 {
+  background-color: $green;
+  width: 20px;
+  margin: 0 5px;
+  text-align: center;
+  padding-top: 3px;
+  height: 30px;
+  border: 2px solid $black;
+  cursor: pointer;
+}
+.color2 {
+  background-color: $yellow;
+  width: 20px;
+  margin: 0 5px;
+  text-align: center;
+  padding-top: 3px;
+  height: 30px;
+  border: 2px solid $black;
+  cursor: pointer;
+}
+.languageSwitcher {
+  border: 2px solid black;
+  margin: 0 0.1em;
+  height: 27px;
+  width: 35px;
+  text-align: center;
+}
 
-  .NL {
-    background: url('../IMAGES/BelgischeVlag.png') no-repeat;
+.NL {
+  background: url('../IMAGES/BelgischeVlag.png') no-repeat;
+  color: $grey;
+  &:hover {
     color: $grey;
-    &:hover {
-      color: $grey;
-    }
   }
-  .EN {
-    background: url('../IMAGES/EngelseVlag.png') no-repeat;
+}
+.EN {
+  background: url('../IMAGES/EngelseVlag.png') no-repeat;
+  color: $black;
+  &:hover {
     color: $black;
-    &:hover {
-      color: $black;
-    }
   }
+}
+li {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 960px) {
@@ -563,13 +562,18 @@ a.links {
 .interCulList {
   margin-left: 3em;
   li {
-    list-style-type: disc;
+    list-style-type: circle;
   }
 }
 /*---Hobby---*/
-
+li.hobby {
+  list-style-type: circle !important;
+}
 .hobby {
   color: $green;
+  &:hover {
+    color: $green;
+  }
 }
 
 p.intro {
@@ -606,10 +610,6 @@ article.IT {
       clear: both;
     }
   }
-}
-
-li {
-  list-style-type: none;
 }
 
 @media screen and (min-width: 750px) {

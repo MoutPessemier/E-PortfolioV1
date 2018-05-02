@@ -116,54 +116,54 @@
   padding: 0;
 }
 
-* h1,
-* h2,
-* h3,
-* h4,
-* h5,
-* h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Montserrat", sans-serif !important;
 }
 
-* .to_top {
+.to_top {
   color: #23be4a;
   text-decoration: none;
 }
 
-* .to_top:hover {
+.to_top:hover {
   color: #23be4a;
   text-decoration: none;
 }
 
-* .to_top:visited {
+.to_top:visited {
   color: #1fa842;
   text-decoration: none;
 }
 
-* hr {
+hr {
   clear: both;
 }
 
-* .emphasis {
+.emphasis {
   color: #23be4a;
   font-weight: bold;
   text-decoration: underline;
 }
 
-* p {
+p {
   margin: 0 0.7em;
 }
 
-* #current {
+#current {
   font-weight: bold;
   color: #23be4a;
 }
 
-* .outdated {
+.outdated {
   text-decoration: line-through;
 }
 
-* .color1 {
+.color1 {
   background-color: #23be4a;
   width: 20px;
   margin: 0 5px;
@@ -174,7 +174,7 @@
   cursor: pointer;
 }
 
-* .color2 {
+.color2 {
   background-color: #f58300;
   width: 20px;
   margin: 0 5px;
@@ -185,12 +185,7 @@
   cursor: pointer;
 }
 
-* ul {
-  list-style: circle;
-  margin-left: 0.75em;
-}
-
-* .languageSwitcher {
+.languageSwitcher {
   border: 2px solid black;
   margin: 0 0.1em;
   height: 27px;
@@ -198,22 +193,26 @@
   text-align: center;
 }
 
-* .NL {
+.NL {
   background: url("../IMAGES/BelgischeVlag.png") no-repeat;
   color: dimgrey;
 }
 
-* .NL:hover {
+.NL:hover {
   color: dimgrey;
 }
 
-* .EN {
+.EN {
   background: url("../IMAGES/EngelseVlag.png") no-repeat;
   color: black;
 }
 
-* .EN:hover {
+.EN:hover {
   color: black;
+}
+
+li {
+  list-style-type: none;
 }
 
 @media screen and (min-width: 960px) {
@@ -714,11 +713,19 @@ a.links {
 }
 
 .interCulList li {
-  list-style-type: disc;
+  list-style-type: circle;
 }
 
 /*---Hobby---*/
+li.hobby {
+  list-style-type: circle !important;
+}
+
 .hobby {
+  color: #23be4a;
+}
+
+.hobby:hover {
   color: #23be4a;
 }
 
@@ -779,10 +786,6 @@ article.IT figure .caption {
   margin-bottom: 0.5em;
   margin-right: 3em;
   clear: both;
-}
-
-li {
-  list-style-type: none;
 }
 
 @media screen and (min-width: 750px) {
