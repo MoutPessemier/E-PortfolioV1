@@ -75,26 +75,17 @@ p {
   cursor: pointer;
 }
 .languageSwitcher {
-  border: 2px solid black;
+  border: 2px solid $black;
   margin: 0 0.1em;
   height: 27px;
   width: 35px;
   text-align: center;
 }
-
 .NL {
   background: url('../IMAGES/BelgischeVlag.png') no-repeat;
-  color: $grey;
-  &:hover {
-    color: $grey;
-  }
 }
 .EN {
   background: url('../IMAGES/EngelseVlag.png') no-repeat;
-  color: $black;
-  &:hover {
-    color: $black;
-  }
 }
 li {
   list-style-type: none;

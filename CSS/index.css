@@ -195,20 +195,10 @@ p {
 
 .NL {
   background: url("../IMAGES/BelgischeVlag.png") no-repeat;
-  color: dimgrey;
-}
-
-.NL:hover {
-  color: dimgrey;
 }
 
 .EN {
   background: url("../IMAGES/EngelseVlag.png") no-repeat;
-  color: black;
-}
-
-.EN:hover {
-  color: black;
 }
 
 li {
