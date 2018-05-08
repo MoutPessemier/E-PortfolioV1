@@ -84,7 +84,9 @@ p {
   border: 2px solid $black;
   margin: 0 0.1em;
   min-height: 27px;
-  min-width: 35px;
+  max-height: 27px;
+  max-width: 29px;
+  min-width: 29px;
   text-align: center;
 }
 
