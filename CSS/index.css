@@ -1,27 +1,29 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 @import url("https://fonts.googleapis.com/css?family=Domine:400,700");
 /*---Burger nav---*/
+
 @-webkit-keyframes slideAway {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
   to {
     -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    transform: translateX(200px);
     opacity: 0;
   }
 }
+
 @keyframes slideAway {
   from {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     opacity: 1;
   }
   to {
     -webkit-transform: translateX(200px);
-            transform: translateX(200px);
+    transform: translateX(200px);
     opacity: 0;
   }
 }
@@ -29,89 +31,92 @@
 @-webkit-keyframes barRotate {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(39deg);
-            transform: rotate(39deg);
+    transform: rotate(39deg);
   }
 }
 
 @keyframes barRotate {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(39deg);
-            transform: rotate(39deg);
+    transform: rotate(39deg);
   }
 }
 
 @-webkit-keyframes barRotateR {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(-39deg);
-            transform: rotate(-39deg);
+    transform: rotate(-39deg);
   }
 }
 
 @keyframes barRotateR {
   from {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
     -webkit-transform: rotate(-39deg);
-            transform: rotate(-39deg);
+    transform: rotate(-39deg);
   }
 }
 
 /*---li bounce---*/
+
 @-webkit-keyframes bounce {
   25% {
     -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    transform: translateY(3px);
   }
   50% {
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   75% {
     -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    transform: translateY(3px);
   }
   100% {
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 }
+
 @keyframes bounce {
   25% {
     -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    transform: translateY(3px);
   }
   50% {
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
   75% {
     -webkit-transform: translateY(3px);
-            transform: translateY(3px);
+    transform: translateY(3px);
   }
   100% {
     -webkit-transform: translateY(-3px);
-            transform: translateY(-3px);
+    transform: translateY(-3px);
   }
 }
 
 /*---General---*/
+
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -128,6 +133,7 @@ h6 {
 .to_top {
   color: #23be4a;
   text-decoration: none;
+  margin-right: 1em;
 }
 
 .to_top:hover {
@@ -232,6 +238,7 @@ li {
 }
 
 /*---Header---*/
+
 header #homepf {
   margin: 0.5em auto 0;
   width: 130px;
@@ -241,12 +248,13 @@ header #homepf {
 }
 
 @media screen and (min-width: 750px) {
-  header > h1 {
+  header>h1 {
     display: none;
   }
 }
 
 /*---Nav---*/
+
 .dropdown {
   position: relative;
 }
@@ -259,7 +267,7 @@ header #homepf {
 
 .dropdown ul li:hover {
   -webkit-animation: bounce 1000ms ease;
-          animation: bounce 1000ms ease;
+  animation: bounce 1000ms ease;
 }
 
 .dropdown ul li a {
@@ -303,11 +311,13 @@ input[type='checkbox'] {
 }
 
 /*Toggle effect*/
-input:checked ~ div.menu-content {
+
+input:checked~div.menu-content {
   max-height: 100%;
 }
 
 /*Burger Blocks*/
+
 .dropdown .navbalk1,
 .dropdown .navbalk2,
 .dropdown .navbalk3 {
@@ -332,19 +342,19 @@ input:checked ~ div.menu-content {
   right: 1.1em;
 }
 
-div.burger ~ input:checked .navbalk1 {
+div.burger~input:checked .navbalk1 {
   -webkit-animation: barRotate 0.5s forwards;
-          animation: barRotate 0.5s forwards;
+  animation: barRotate 0.5s forwards;
 }
 
-div.burger ~ input:checked .navbalk2 {
+div.burger~input:checked .navbalk2 {
   -webkit-animation: slideAway 0.5s forwards;
-          animation: slideAway 0.5s forwards;
+  animation: slideAway 0.5s forwards;
 }
 
-div.burger ~ input:checked navbalk3 {
+div.burger~input:checked navbalk3 {
   -webkit-animation: barRotateR 0.5s forwards;
-          animation: barRotateR 0.5s forwards;
+  animation: barRotateR 0.5s forwards;
 }
 
 @media screen and (min-width: 750px) {
@@ -363,9 +373,10 @@ div.burger ~ input:checked navbalk3 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    box-pack: inherit;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
   nav.dropdown li {
     padding: 0.5em;
@@ -390,6 +401,7 @@ div.burger ~ input:checked navbalk3 {
 }
 
 /*---Footer---*/
+
 footer {
   margin: 0 auto;
   padding: 0;
@@ -399,6 +411,7 @@ footer {
 }
 
 /*---Body---*/
+
 body {
   background-color: whitesmoke;
 }
@@ -414,13 +427,14 @@ body {
 }
 
 /*---Social Media Logo's---*/
+
 #fb {
   width: 75px;
   height: 76px;
   background-image: url("../IMAGES/sprites.png");
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
 }
 
 #twtr {
@@ -429,8 +443,8 @@ body {
   background-image: url("../IMAGES/sprites.png");
   background-position: -75px 1px;
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -440,8 +454,8 @@ body {
   background-image: url("../IMAGES/sprites.png");
   background-position: -150px 0px;
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -451,8 +465,8 @@ body {
   background-image: url("../IMAGES/sprites.png");
   background-position: -75px -150px;
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -462,8 +476,8 @@ body {
   background-image: url("../IMAGES/sprites.png");
   background-position: -76px -302px;
   -webkit-transform: scale(0.5);
-      -ms-transform: scale(0.5);
-          transform: scale(0.5);
+  -ms-transform: scale(0.5);
+  transform: scale(0.5);
   margin-left: -2.3em;
 }
 
@@ -471,9 +485,10 @@ div.socialcontainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  box-pack: inherit;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   clear: both;
 }
 
@@ -492,13 +507,15 @@ div.socialcontainer a.social:visited {
 
 @media screen and (min-width: 750px) {
   div.socialcontainer {
+    box-pack: inherit;
     -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
   }
 }
 
 /*---Home---*/
+
 .intro {
   margin: 1em 0.5em;
 }
@@ -517,6 +534,7 @@ div.socialcontainer a.social:visited {
 }
 
 /*---Carousel---*/
+
 .slider {
   border: 2px solid black;
   margin-bottom: 0.5em;
@@ -536,6 +554,7 @@ div.socialcontainer a.social:visited {
 }
 
 /*code block center (rewrite later to make it better!)*/
+
 @media screen and (max-width: 749px) {
   .if_else {
     margin-left: 15%;
@@ -585,6 +604,7 @@ div.socialcontainer a.social:visited {
 }
 
 /*---Info---*/
+
 .year {
   font-weight: bold;
   color: #23be4a;
@@ -597,8 +617,8 @@ sup {
 
 .dropdownArrow {
   -webkit-transform: rotate(180deg) scale(0.8);
-      -ms-transform: rotate(180deg) scale(0.8);
-          transform: rotate(180deg) scale(0.8);
+  -ms-transform: rotate(180deg) scale(0.8);
+  transform: rotate(180deg) scale(0.8);
   cursor: pointer;
   margin-left: 8px;
 }
@@ -616,6 +636,7 @@ sup {
 }
 
 /*---Italent---*/
+
 h3.title {
   font-weight: bold;
 }
@@ -628,6 +649,7 @@ h3.title {
 }
 
 /*---CV---*/
+
 th {
   font-family: "Montserrat", sans-serif !important;
 }
@@ -688,6 +710,7 @@ th.th3 {
 }
 
 /*---Portfolio---*/
+
 h3.course {
   text-decoration: underline;
   font-weight: bold;
@@ -707,6 +730,7 @@ a.links {
 }
 
 /*---Hobby---*/
+
 li.hobby {
   list-style-type: circle !important;
 }
@@ -872,6 +896,7 @@ article.IT figure .caption {
 }
 
 /*---Extra links---*/
+
 section.links {
   margin: 0.6em;
 }
@@ -886,6 +911,7 @@ section.links a.extra_links {
 }
 
 /*---Contact---*/
+
 .btn {
   background-color: #23be4a;
   color: whitesmoke;
@@ -938,8 +964,9 @@ input[type='text'] {
     margin: 0 auto;
     width: 50%;
   }
-  fieldset > legend {
+  fieldset>legend {
     display: none;
   }
 }
+
 /*# sourceMappingURL=index.css.map */
