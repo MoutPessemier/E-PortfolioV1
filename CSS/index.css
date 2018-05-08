@@ -188,8 +188,8 @@ p {
 .languageSwitcher {
   border: 2px solid black;
   margin: 0 0.1em;
-  height: 27px;
-  width: 35px;
+  min-height: 27px;
+  min-width: 35px;
   text-align: center;
 }
 
@@ -755,7 +755,7 @@ article.fitness p,
 article.gitaar p,
 article.IT p {
   margin: 0 0.5em;
-  margin-left: 5em;
+  margin-left: 2em;
 }
 
 article.floorball figure img,
@@ -823,7 +823,7 @@ article.IT figure .caption {
   article.fitness figure p,
   article.gitaar figure p,
   article.IT figure p {
-    width: 50%;
+    width: 100%;
     float: right;
   }
   article.floorball {
