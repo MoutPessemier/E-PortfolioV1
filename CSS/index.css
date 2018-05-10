@@ -768,6 +768,7 @@ article.fitness figure img,
 article.gitaar figure img,
 article.IT figure img {
   width: 100%;
+  background-color: black;
 }
 
 article.floorball figure .caption,
@@ -782,15 +783,6 @@ article.IT figure .caption {
 }
 
 @media screen and (min-width: 750px) {
-  article.floorball,
-  article.tennis,
-  article.winter,
-  article.fitness,
-  article.gitaar,
-  article.IT {
-    clear: both;
-    padding: 0.5em 0;
-  }
   article.floorball figure,
   article.tennis figure,
   article.winter figure,
@@ -805,72 +797,20 @@ article.IT figure .caption {
   article.fitness figure img,
   article.gitaar figure img,
   article.IT figure img {
-    width: 45%;
-    float: left;
-    margin-right: 1.5em;
-  }
-  article.floorball figure div.caption,
-  article.tennis figure div.caption,
-  article.winter figure div.caption,
-  article.fitness figure div.caption,
-  article.gitaar figure div.caption,
-  article.IT figure div.caption {
-    float: left;
-    clear: both;
-    text-align: left;
-    max-width: 288px;
-  }
-  article.floorball figure p,
-  article.tennis figure p,
-  article.winter figure p,
-  article.fitness figure p,
-  article.gitaar figure p,
-  article.IT figure p {
-    width: 100%;
-    float: right;
-  }
-  article.floorball {
-    margin-top: 0;
+    width: 50%;
+    display: block;
+    margin: 0.2em auto;
   }
 }
 
 @media screen and (min-width: 960px) {
-  article.floorball figure,
-  article.tennis figure,
-  article.winter figure,
-  article.fitness figure,
-  article.gitaar figure,
-  article.IT figure {
-    width: 100%;
-  }
   article.floorball figure img,
   article.tennis figure img,
   article.winter figure img,
   article.fitness figure img,
   article.gitaar figure img,
   article.IT figure img {
-    width: 40%;
-    float: left;
-  }
-  article.floorball figure div.caption,
-  article.tennis figure div.caption,
-  article.winter figure div.caption,
-  article.fitness figure div.caption,
-  article.gitaar figure div.caption,
-  article.IT figure div.caption {
-    top: 290px;
-    width: 100%;
-    float: left;
-    clear: both;
-  }
-  article.floorball figure p,
-  article.tennis figure p,
-  article.winter figure p,
-  article.fitness figure p,
-  article.gitaar figure p,
-  article.IT figure p {
-    padding-right: 1em;
-    float: right;
+    width: 55%;
   }
 }
 

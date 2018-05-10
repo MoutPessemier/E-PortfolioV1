@@ -621,6 +621,7 @@ article.IT {
   figure {
     img {
       width: 100%;
+      background-color: $black;
     }
     .caption {
       margin-bottom: 0.5em;
@@ -630,36 +631,21 @@ article.IT {
   }
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width:750px) {
   article.floorball,
   article.tennis,
   article.winter,
   article.fitness,
   article.gitaar,
   article.IT {
-    clear: both;
-    padding: 0.5em 0;
     figure {
       width: 100%;
       img {
-        width: 45%;
-        float: left;
-        margin-right: 1.5em;
-      }
-      div.caption {
-        float: left;
-        clear: both;
-        text-align: left;
-        max-width: 288px;
-      }
-      p {
-        width: 100%;
-        float: right;
+        width: 50%;
+        display: block;
+        margin: 0.2em auto;
       }
     }
-  }
-  article.floorball {
-    margin-top: 0;
   }
 }
 
@@ -671,20 +657,8 @@ article.IT {
   article.gitaar,
   article.IT {
     figure {
-      width: 100%;
       img {
-        width: 40%;
-        float: left;
-      }
-      div.caption {
-        top: 290px;
-        width: 100%;
-        float: left;
-        clear: both;
-      }
-      p {
-        padding-right: 1em;
-        float: right;
+        width: 55%
       }
     }
   }
