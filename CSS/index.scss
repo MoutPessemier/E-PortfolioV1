@@ -139,12 +139,13 @@ header {
 }
 
 @media screen and (min-width: 750px) {
-  header>h1 {
+  header > h1 {
     display: none;
   }
 }
 
-@media screen and (min-width: 960px) {}
+@media screen and (min-width: 960px) {
+}
 
 /*---Nav---*/
 
@@ -201,7 +202,7 @@ input[type='checkbox'] {
 
 /*Toggle effect*/
 
-input:checked~div.menu-content {
+input:checked ~ div.menu-content {
   max-height: 100%;
 }
 
@@ -230,7 +231,7 @@ input:checked~div.menu-content {
   }
 }
 
-div.burger~input:checked {
+div.burger ~ input:checked {
   .navbalk1 {
     animation: barRotate 0.5s forwards;
   }
@@ -631,7 +632,7 @@ article.IT {
   }
 }
 
-@media screen and (min-width:750px) {
+@media screen and (min-width: 750px) {
   article.floorball,
   article.tennis,
   article.winter,
@@ -658,7 +659,7 @@ article.IT {
   article.IT {
     figure {
       img {
-        width: 55%
+        width: 55%;
       }
     }
   }
@@ -736,7 +737,7 @@ input[type='text'] {
     margin: 0 auto;
     width: 50%;
   }
-  fieldset>legend {
+  fieldset > legend {
     display: none;
   }
 }
