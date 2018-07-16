@@ -26,12 +26,12 @@ function restore() {
 
 function init() {
   const btnSort = document.getElementById('resort');
-  btnSort.onclick = function() {
+  btnSort.onclick = function () {
     sort();
   };
 
   const btnRestore = document.getElementById('restore');
-  btnRestore.onclick = function() {
+  btnRestore.onclick = function () {
     restore();
   };
 }
