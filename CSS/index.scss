@@ -126,6 +126,11 @@ li {
   font-weight: bolder;
 }
 
+#show {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /*---Header---*/
 
 header {
@@ -139,13 +144,12 @@ header {
 }
 
 @media screen and (min-width: 750px) {
-  header > h1 {
+  header>h1 {
     display: none;
   }
 }
 
-@media screen and (min-width: 960px) {
-}
+@media screen and (min-width: 960px) {}
 
 /*---Nav---*/
 
@@ -202,7 +206,7 @@ input[type='checkbox'] {
 
 /*Toggle effect*/
 
-input:checked ~ div.menu-content {
+input:checked~div.menu-content {
   max-height: 100%;
 }
 
@@ -231,7 +235,7 @@ input:checked ~ div.menu-content {
   }
 }
 
-div.burger ~ input:checked {
+div.burger~input:checked {
   .navbalk1 {
     animation: barRotate 0.5s forwards;
   }
@@ -564,6 +568,14 @@ th.th3 {
   text-align: center;
 }
 
+.curvitd {
+  display: none;
+}
+
+.curvita {
+  display: block;
+}
+
 /*---Portfolio---*/
 
 h3.course {
@@ -737,7 +749,7 @@ input[type='text'] {
     margin: 0 auto;
     width: 50%;
   }
-  fieldset > legend {
+  fieldset>legend {
     display: none;
   }
 }

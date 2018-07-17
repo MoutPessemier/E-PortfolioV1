@@ -7,8 +7,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=yes, width=device-width">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
     <link href="../CSS/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="../CSS/index.css" type="text/css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -177,26 +175,6 @@
         &copy;
         <small class="text-center">Mout Pessemier</small>
     </footer>
-
-    <!--Firestore-->
-
-    <script>
-        // Initialize Firebase
-        var config = {
-            apiKey: "AIzaSyCQEgAT4uLuL2gh6EayyEu79ujmDapKr24",
-            authDomain: "e-port-df355.firebaseapp.com",
-            databaseURL: "https://e-port-df355.firebaseio.com",
-            projectId: "e-port-df355",
-            storageBucket: "e-port-df355.appspot.com",
-            messagingSenderId: "784245382685"
-        };
-        firebase.initializeApp(config);
-        const db = firebase.firestore();
-        db.settings({
-            timestampsInSnapshots: true
-        });
-    </script>
-    <script src="/JS/database.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

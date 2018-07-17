@@ -234,6 +234,11 @@ li {
   font-weight: bolder;
 }
 
+#show {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 /*---Header---*/
 header #homepf {
   margin: 0.5em auto 0;
@@ -688,6 +693,14 @@ th.th3 {
   width: 280px;
   height: 20px;
   text-align: center;
+}
+
+.curvitd {
+  display: none;
+}
+
+.curvita {
+  display: block;
 }
 
 /*---Portfolio---*/
