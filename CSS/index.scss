@@ -697,59 +697,48 @@ section.links {
   color: $white;
   border-radius: 7px;
   margin-top: 1em;
+  :hover {
+    background: lighten($green, 25);
+  }
 }
 
 form {
-  width: 50%;
+  width: 90%;
   margin: 0 auto;
+}
+
+textarea {
+  resize: none;
+}
+
+#message {
+  height: 250px;
+}
+
+#feedback {
+  width: 150px;
+  height: 50px;
+  position: fixed;
   text-align: center;
-}
-
-fieldset {
-  .gender {
-    label {
-      display: inline-block;
-      width: 160px;
-      text-align: left;
-    }
-  }
-  .details {
-    label {
-      text-align: left;
-    }
-  }
-}
-
-select {
-  width: 150px;
-}
-
-input[type='text'] {
-  width: 150px;
-  display: block;
-  margin: 0 auto;
+  padding-top: 15px;
+  border-radius: 10px;
+  color: $white;
+  font-family: $fontFamilyTitles;
+  visibility: hidden;
+  top: 77%;
+  left: 55%
 }
 
 @media screen and (min-width: 750px) {
-  legend {
-    padding-top: 0.5em;
-    width: 350px;
-  }
-  input[type='text'] {
-    width: 170px;
-  }
-  select {
-    width: 170px;
+  #feedback {
+    top: 80%;
+    left: 80%;
   }
 }
 
-@media screen and (min-width: 960px) {
-  .cont {
-    background: url(../IMAGES/kaderForm.png) no-repeat;
-    margin: 0 auto;
-    width: 50%;
-  }
-  fieldset>legend {
-    display: none;
+@media screen and (min-width:960px) {
+  #feedback {
+    top: 80%;
+    left: 65%;
   }
 }

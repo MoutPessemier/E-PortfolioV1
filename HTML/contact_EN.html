@@ -80,75 +80,92 @@
     <div class="cont">
 
         <form action="#" method="post" class="form-group" id="followerForm">
-            <br />
-            <br />
-            <fieldset>
-                <legend>Subscribe to stay up to date:</legend>
-                <div class="gender">
-                    <h4>
-                        <u>You're a ...</u>
-                    </h4>
-                    <label for="male">Male:</label>
-                    <input type="radio" name="gender" id="male" tabindex="12">
-                    <br />
-                    <label for="female">Female:</label>
-                    <input type="radio" name="gender" id="female" tabindex="13">
-                    <br />
-                    <label for="other">Other:</label>
-                    <input type="radio" name="gender" id="other" tabindex="14">
-                </div>
+            <div class="form-group">
+                <br />
+                <br />
+                <fieldset>
+                    <legend>Subscribe to stay up to date:</legend>
+                    <div class="gender">
+                        <h4>
+                            <u>You're a ...</u>
+                        </h4>
+                        <label for="male">Male:</label>
+                        <input type="radio" name="gender" id="male" tabindex="12">
+                        <br />
+                        <label for="female">Female:</label>
+                        <input type="radio" name="gender" id="female" tabindex="13">
+                        <br />
+                        <label for="other">Other:</label>
+                        <input type="radio" name="gender" id="other" tabindex="14">
+                    </div>
 
-                <div class="details">
-                    <h4>
-                        <u>
-                            And how should I call you?
-                        </u>
-                    </h4>
-                    <label for="name">Name:</label>
-                    <input type="text" name="details" id="name" tabindex="15">
+                    <div class="details">
+                        <h4>
+                            <u>
+                                And how should I call you?
+                            </u>
+                        </h4>
+                        <label for="name">Name:</label>
+                        <input class="form-control" type="text" name="details" id="name" tabindex="15">
+                        <br />
+                        <label for="email">E-mail:</label>
+                        <input class="form-control" type="text" name="details" id="email" tabindex="16">
+                        <br />
+                    </div>
+                    <div class="intrests">
+                        <h4>
+                            <u>What are your intrests?</u>
+                        </h4>
+                        <input type="checkbox" name="intrests" value="HTML/CSS">
+                        <span class="text-left">HTML &amp; CSS</span>
+                        <br />
+                        <input type="checkbox" name="intrests" value="JAVASCRIPTS">
+                        <span class="text-left">Javascript</span>
+                        <br />
+                        <input type="checkbox" name="intrests" value="JAVA">
+                        <span class="text-left">Java</span>
+                        <br />
+                        <input type="checkbox" name="intrests" value="DATABASE">
+                        <span class="text-left">MySQL</span>
+                        <br />
+                        <input type="checkbox" name="intrests" value="LINUX">
+                        <span class="text-left">Linux</span>
+                        <br />
+                    </div>
+                    <input type="button" value="Subscribe!" class="btn" tabindex="18">
                     <br />
-                    <label for="email">E-mail:</label>
-                    <input type="text" name="details" id="email" tabindex="16">
                     <br />
-                </div>
-                <div class="intrests">
-                    <h4>
-                        <u>What are your intrests?</u>
-                    </h4>
-                    <input type="checkbox" name="intrests" value="HTML/CSS" class="checkBoxList">
-                    <span class="text-left">HTML &amp; CSS</span>
                     <br />
-                    <input type="checkbox" name="intrests" value="JAVASCRIPTS" class="checkBoxList">
-                    <span class="text-left">Javascript</span>
-                    <br />
-                    <input type="checkbox" name="intrests" value="JAVA" class="checkBoxList">
-                    <span class="text-left">Java</span>
-                    <br />
-                    <input type="checkbox" name="intrests" value="DATABASE" class="checkBoxList">
-                    <span class="text-left">MySQL</span>
-                    <br />
-                    <input type="checkbox" name="intrests" value="LINUX" class="checkBoxList">
-                    <span class="text-left">Linux</span>
-                    <br />
-                </div>
-                <input type="button" value="Subscribe!" class="btn" tabindex="18">
-                <br />
-                <br />
-                <br />
-            </fieldset>
+                </fieldset>
+            </div>
         </form>
 
-        <h3>Followers:</h3>
+        <!-- <h3>Followers:</h3>
         <ul id="followers">
-        </ul>
+        </ul> -->
 
     </div>
     <section>
-        <article>
-            <h3>Questions?</h3>
-            <hr />
-            <a href="mailto:moutpessemier@hotmail.com" tabindex="19" class="links">Mail me!</a>
-        </article>
+        <h3>Questions?</h3>
+        <h4>Leave me a question:</h4>
+        <hr />
+        <form id="mail" action="mailto:moutpessemier@hotmail.com" method="POST">
+            <p>Name:</p>
+            <br />
+            <input id="name" type="text" placeholder="Max Maxenheim" class="form-control">
+            <br />
+            <p>E-mail:</p>
+            <br />
+            <input id="email" type="text" placeholder="example@example.com" class="form-control">
+            <br />
+            <p>Message:</p>
+            <br />
+            <textarea id="message" placeholder="Leave your message here..." class="form-control" aria-expanded="false"></textarea>
+            <br />
+            <br />
+            <button class="btn">Send</button>
+        </form>
+        <div id="feedback"></div>
     </section>
 
     <hr />
@@ -175,6 +192,8 @@
         &copy;
         <small class="text-center">Mout Pessemier</small>
     </footer>
+
+    <script src="../JS/mail.js"></script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
