@@ -285,7 +285,7 @@ header #homepf {
   background: #262626;
 }
 
-input[type='checkbox'] {
+#menu-click {
   display: none;
 }
 
@@ -404,6 +404,8 @@ footer {
   width: 100%;
   background-color: black;
   color: whitesmoke;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
 /*---Body---*/
