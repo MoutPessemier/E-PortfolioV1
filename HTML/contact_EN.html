@@ -91,21 +91,22 @@
         <form id="mail" action="https://formspree.io/moutpessemier@hotmail.com" method="POST">
             <p>Name:</p>
             <br />
-            <input id="name" type="text" placeholder="Max Maxenheim" class="form-control" required>
+            <input id="name" type="text" name="naam" placeholder="Max Maxenheim" class="form-control" required>
             <br />
             <p>E-mail:</p>
             <br />
-            <input id="email" type="email" placeholder="example@example.com" class="form-control" required>
+            <input id="email" type="email" name="email" placeholder="example@example.com" class="form-control" required>
             <input type="text" name="_gotcha" style="display:none" />
             <input type="hidden" name="_format" value="plain" />
             <input type="hidden" name="_next" value="http://users.hogent.be/~750076mp/" />
             <br />
             <p>Message:</p>
             <br />
-            <textarea id="message" placeholder="Leave your message here..." class="form-control" aria-expanded="false" required></textarea>
+            <textarea id="message" name="message" placeholder="Leave your message here..." class="form-control" aria-expanded="false"
+                required></textarea>
             <br />
             <br />
-            <button class="btn center-block">Send</button>
+            <button type="submit" class="btn center-block">Send</button>
         </form>
         <div id="feedback"></div>
     </main>
@@ -135,7 +136,7 @@
         <small class="text-center">Mout Pessemier</small>
     </footer>
 
-    <script src="../JS/mail.js"></script>
+    <!--  <script src="../JS/mail.js"></script>-->
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
