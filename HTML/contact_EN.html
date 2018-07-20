@@ -88,19 +88,21 @@
         <h3>Questions?</h3>
         <h4>Let me know:</h4>
         <hr>
-        <form id="mail" method="POST">
+        <form id="mail" action="https://formspree.io/moutpessemier@hotmail.com" method="POST">
             <p>Name:</p>
             <br />
-            <input id="name" type="text" placeholder="Max Maxenheim" class="form-control">
+            <input id="name" type="text" placeholder="Max Maxenheim" class="form-control" required>
             <br />
             <p>E-mail:</p>
             <br />
-            <input id="email" type="text" placeholder="example@example.com" class="form-control">
+            <input id="email" type="email" placeholder="example@example.com" class="form-control" required>
             <input type="text" name="_gotcha" style="display:none" />
+            <input type="hidden" name="_format" value="plain" />
+            <input type="hidden" name="_next" value="http://users.hogent.be/~750076mp/" />
             <br />
             <p>Message:</p>
             <br />
-            <textarea id="message" placeholder="Leave your message here..." class="form-control" aria-expanded="false"></textarea>
+            <textarea id="message" placeholder="Leave your message here..." class="form-control" aria-expanded="false" required></textarea>
             <br />
             <br />
             <button class="btn center-block">Send</button>
