@@ -88,24 +88,30 @@
         <h4>Stel ze gerust:</h4>
         <hr>
         <form id="mail" action="https://formspree.io/moutpessemier@hotmail.com" method="POST">
-            <p>Naam::</p>
+            <p>
+                <span class="red">*</span>Naam:</p>
             <br />
             <input id="name" type="text" name="naam" placeholder="Max Maxenheim" class="form-control" required>
             <br />
-            <p>E-mail:</p>
+            <p>
+                <span class="red">*</span>E-mail:</p>
             <br />
             <input id="email" type="email" name="email" placeholder="example@example.com" class="form-control" required>
             <input type="text" name="_gotcha" style="display:none" />
             <input type="hidden" name="_format" value="plain" />
             <input type="hidden" name="_next" value="http://users.hogent.be/~750076mp/" />
             <br />
-            <p>Boodschap:</p>
+            <p>
+                <span class="red">*</span>Boodschap:</p>
             <br />
             <textarea id="message" name="message" placeholder="Leave your message here..." class="form-control" aria-expanded="false"
                 required></textarea>
             <br />
             <br />
             <button type="submit" class="btn center-block">Send</button>
+            <small>
+                <span class="red">*</span> zijn verplicht in te vullen.
+            </small>
         </form>
         <div id="feedback"></div>
     </main>

@@ -239,6 +239,10 @@ li {
   text-decoration: underline;
 }
 
+.red {
+  color: #D4002C;
+}
+
 /*---Header---*/
 header #homepf {
   margin: 0.5em auto 0;
