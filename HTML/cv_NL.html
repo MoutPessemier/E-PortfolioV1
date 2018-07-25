@@ -45,7 +45,7 @@
                         <a href="selfInfo_NL.html" tabindex="2">Info</a>
                     </li> -->
                     <li>
-                        <a href="i1talent_NL.html" tabindex="3">I1Talent</a>
+                        <a href="italent_NL.html" tabindex="3">I1Talent</a>
                     </li>
                     <li>
                         <a href="cv_NL.html" id="current" tabindex="4">Curriculum Vitae</a>
@@ -67,26 +67,32 @@
                     </li>
                 </ul>
             </div>
+
+            <div id="language" class="text-center">
+                <h5 class="lTitle show">Kies een taal</h5>
+                <div id="languagePic">
+                    <a href="cv_NL.html" class="links" tabindex="10">
+                        NL
+                    </a>
+                    <span class="invisible">&mdash;&mdash;</span>
+                    <a href="cv_EN.html" class="links" tabindex="11">
+                        EN
+                    </a>
+                </div>
+            </div>
         </nav>
-        <!-- <span class="color1">A</span>
-        <span class="color2">A</span> -->
-        <a href="cv_NL.html" class="languageSwitcher NL" tabindex="10">
-            <span class="invisible">&mdash;ll</span>
-        </a>
-        <a href="cv_EN.html" class="languageSwitcher EN" tabindex="11">
-            <span class="invisible">&mdash;lll</span>
-        </a>
+
     </div>
 
     <main>
         <h1 class="text-center">Curriculum Vitae</h1>
         <hr>
         <br />
-        <a href="../FILES/Curriculum Vitae.pdf" download="Curriculum Vitae" class="links">You can donwload my Curriculum Vitae here (only my Curriculum)</a>
+        <a href="../FILES/Curriculum Vitae.pdf" download="Curriculum Vitae" class="links">Hier kan je mijn Curriculum Vitae downloaden (allen mijn curriculum)</a>
         <br />
-        <a href="../FILES/Curriculum Vitae.zip" download="Curriculum Vitae & certificates" class="links">You can donwload my Curriculum Vitae here (Curriculum + certificates)</a>
+        <a href="../FILES/Curriculum Vitae.zip" download="Curriculum Vitae & certificates" class="links">Hier kan je zowel mijn Curriculum als mijn certificaten downloaden</a>
 
-        <h3 id="show">Show Curriculum Vitae (click me!)</h3>
+        <h3 class="show">Toon Curriculum Vitae (klik me!)</h3>
         <div class="curvitd">
             <br />
             <p class="cv">Mout Pessemier
@@ -384,13 +390,17 @@
     </footer>
 
 
-    <script src="../JS/cv.js"></script>
+
 
     <!-- imports-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../JS/bootstrap.min.js"></script>
+
+    <!-- scripts-->
+    <script src="../JS/cv.js"></script>
+    <script src="../JS/language.js"></script>
 </body>
 
 </html>

@@ -58,44 +58,32 @@ p {
   text-decoration: line-through;
 }
 
-.color1 {
-  background-color: $green;
-  width: 20px;
-  margin: 0 5px;
-  text-align: center;
-  padding-top: 3px;
-  height: 30px;
-  border: 2px solid $black;
-  cursor: pointer;
-}
+// .languageSwitcher {
+//   border: 2px solid $black;
+//   margin: 0 0.1em;
+//   min-height: 27px;
+//   max-height: 27px;
+//   max-width: 29px;
+//   min-width: 29px;
+//   text-align: center;
+// }
 
-.color2 {
-  background-color: $yellow;
-  width: 20px;
-  margin: 0 5px;
-  text-align: center;
-  padding-top: 3px;
-  height: 30px;
-  border: 2px solid $black;
-  cursor: pointer;
-}
+// .NL {
+//   background: url('../IMAGES/BelgischeVlag.png') no-repeat;
+// }
 
-.languageSwitcher {
-  border: 2px solid $black;
-  margin: 0 0.1em;
-  min-height: 27px;
-  max-height: 27px;
-  max-width: 29px;
-  min-width: 29px;
-  text-align: center;
-}
+// .EN {
+//   background: url('../IMAGES/EngelseVlag.png') no-repeat;
+// }
 
-.NL {
-  background: url('../IMAGES/BelgischeVlag.png') no-repeat;
+@media screen and (min-width: 960px) {
+  #language {
+    float: left;
+    clear: both;
+  }
 }
-
-.EN {
-  background: url('../IMAGES/EngelseVlag.png') no-repeat;
+#languagePic {
+  display: none;
 }
 
 li {
@@ -126,7 +114,7 @@ li {
   font-weight: bolder;
 }
 
-#show {
+.show {
   cursor: pointer;
   text-decoration: underline;
 }
@@ -148,12 +136,13 @@ header {
 }
 
 @media screen and (min-width: 750px) {
-  header>h1 {
+  header > h1 {
     display: none;
   }
 }
 
-@media screen and (min-width: 960px) {}
+@media screen and (min-width: 960px) {
+}
 
 /*---Nav---*/
 
@@ -210,7 +199,7 @@ header {
 
 /*Toggle effect*/
 
-input:checked~div.menu-content {
+input:checked ~ div.menu-content {
   max-height: 100%;
 }
 
@@ -239,7 +228,7 @@ input:checked~div.menu-content {
   }
 }
 
-div.burger~input:checked {
+div.burger ~ input:checked {
   .navbalk1 {
     animation: barRotate 0.5s forwards;
   }
@@ -732,7 +721,7 @@ textarea {
   font-family: $fontFamilyTitles;
   visibility: hidden;
   top: 77%;
-  left: 55%
+  left: 55%;
 }
 
 @media screen and (min-width: 750px) {
@@ -742,7 +731,7 @@ textarea {
   }
 }
 
-@media screen and (min-width:960px) {
+@media screen and (min-width: 960px) {
   #feedback {
     top: 80%;
     left: 65%;

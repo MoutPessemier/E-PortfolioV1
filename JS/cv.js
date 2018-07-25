@@ -1,5 +1,5 @@
 function init() {
-    document.getElementById('show').onclick = () => {
+    document.getElementsByClassName('show')[1].onclick = () => {
         if (document.getElementsByClassName('curvitd')[0]) {
             document.getElementsByClassName('curvitd')[0].setAttribute('class', 'curvita');
         } else {
