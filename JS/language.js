@@ -1,11 +1,6 @@
 $('document').ready(() => {
 
     $('.lTitle').on('click', () => {
-        $('#languagePic').show();
+        $('#languagePic').slideToggle('slow', 'swing');
     })
-
-    $('#language').on('mouseleave', () => {
-        $('#languagePic').hide();
-    })
-
 })
